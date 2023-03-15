@@ -1,0 +1,25 @@
+extend layout 
+
+block content 
+    h1= title 
+    p Listado de #{title}
+    ul 
+    div 
+        table 
+            thead 
+                tr 
+                    th Nombre
+                    th apeMat
+                    th apePat
+                    th edad
+                    th Rut
+
+            tbody
+                each cliente in clientes 
+                    tr 
+                        td #{cliente.nombre}
+                        td #{cliente.apeMat}
+                        td #{cliente.apePat}
+                        td #{cliente.edad}
+                        td #{cliente.rut}
+
